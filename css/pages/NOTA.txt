@@ -1,0 +1,3 @@
+Observem que no arquivo original há dois @import, isso significa que teríamos mais duas requisições, 
+aumentando o tempo de carregamento. No arquivo minificado, já incluímos o conteúdo dos imports no arquivo,
+tornando um código só e com uma leitura muito mais rápida, para o servidor, apesar de ser, para nós, mais confuso.

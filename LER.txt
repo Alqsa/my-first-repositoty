@@ -1,0 +1,13 @@
+ENVIAR EMAIL ATRAVES DO GOOGLE DRIVE
+https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server
+
+MINIFICANDO O CSS
+No terminal do node digite:
+
+	* Instalar:
+		npm install -g minifier
+	* Acessar a pasta css e digitar: 'pages' o nome de uma subpasta caso haja
+		minify pages      
+
+
+https://www.npmjs.com/package/node-minify

@@ -1,0 +1,14 @@
+*{
+    box-sizing: border-box;    /* O PADRÃO DO CSS É SOMAR AS TODAS AS PROPRIEDADES EX: width: 10px; border: 1px = 11, COM BORDER BOX EX: width: 10px; border: 1px = 10  DIMINUI O A AREA DE CONTEUDO */
+}
+a{
+    text-decoration: none;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+p{
+    margin: 10px 0 10px 0
+}

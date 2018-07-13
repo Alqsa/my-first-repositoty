@@ -1,0 +1,245 @@
+@import url('reset.css');
+@import url('grid.css');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: rgb(130, 130, 130);
+    line-height: 25px;
+}
+
+#header .btn{
+    font-size: 16px;
+    padding: 10px 30px;
+}
+#header .btn:hover{
+    background-color: rgb(84, 180, 84);
+}
+#header nav a{
+    display: inline-block;                                 /* Inline block para poder passar padding */
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;    
+}
+#header nav a:hover, #header nav a.active{                  /* Passando o mesmo background para as duas casses */
+    background-color: rgba(84, 209, 84, 0.3); 
+}
+#header h1{
+    font-size: 54px;
+    line-height: 60px;
+}
+#header{
+    background: #000000 no-repeat fixed center;  /* fixed  para a imagem ficar parada ao rolar o mouse */
+    background-size: cover;                          /* Fazendo a imagem se ajustar */
+    color: #ffffff;
+    width: 100%;
+    height: 660px;
+    position: relative;
+    padding-top: 30px;
+}
+#header a{
+    color: #ffffff;
+    transition: ease .5s all;
+}
+#header nav{
+    text-align: right; 
+}
+#header nav ul, #header nav ul li{
+    display: inline-block;          /* ATENÇÃO padding NÃO FUNCIONA COM 'inline' */
+}
+#header .title{
+    position: absolute;
+    left: 0;
+    top: 50%;                     /* DICA CENTRALIZANDO NA VERTICAL AO MEIO COM BASE NO POSITION */
+    transform: translate(0, -50%);   /* AJUDA A CENTRALIZAR */
+    text-align: center;
+}
+
+.section{
+    padding: 30px 0 30px 0;
+}
+.section-center{
+    text-align: center;
+}
+
+#footer{
+    background-color: rgb(51, 51, 51);
+    text-align: left;
+}
+#footer, #footer a{
+    color: rgb(204, 204, 204);
+}
+#footer h3, #footer nav li{
+    text-transform: uppercase;
+}
+#footer h3:after{
+    content: '';
+    display: block;
+    border-bottom: 2px solid rgb(204, 204, 204);
+    width: 30px;
+}
+#footer nav li{
+    padding: 3px 0;
+}
+#footer nav li a:hover{
+    color: rgb(255, 255, 255);
+}
+#footer .social{
+    height: 200px;           /* Definindo altura para a div */
+    line-height: 200px;      /* Fazendo ocupar toda */
+    text-align: center;      
+}
+#footer .social a{
+    display: inline-block;
+    padding: 0 0 0 10px;
+    opacity: 1;               /* OPACIDADE */
+}
+#footer .social a:hover{
+    opacity: .5;
+    transition: ease .3s all;
+}
+#footer .social img{
+    vertical-align: middle;
+}
+
+#copyright{
+    text-align: center;
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+}
+
+@media (max-width: 992px){     /* ATÉ AS TELAS DE 992px */
+    #header, #header nav{
+        text-align: center;
+    }
+}
+
+
+        /* TYPOGRAPHY */
+h2{
+    text-transform: uppercase;
+    font-weight: normal;
+    text-align: center;
+    font-size: 25px;
+    margin: 10px 0 20px 0;
+}
+h2:after{                      /* Insere conteudo depois da tag */
+    content: '';               /* Caso quisesse colocar alguma escrita, como não quero deixo em vazio */
+    display: block;
+    background-color: rgb(130, 130, 130);
+    margin: 5px auto 0 auto;       /* DICA 'auto' na esquerda e direita ele centraliza o elemento  */
+    width: 50px;
+    height: 2px;
+}        
+.subtitle{
+    margin-bottom: 80px;
+}
+.text-left{
+    text-align: left;
+}
+
+
+        /* MENU */
+nav ul, nav ul li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+        /* BUTTONS */
+.btn{
+    background-color: rgb(84, 209, 84);
+    color: #ffffff;
+    display: inline-block;
+    border-radius: 30px !important;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: ease .5s all;             /* Deixando a transição mais suave */
+    border: none !important;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(84, 180, 84);
+}
+.btn.orange{
+    background-color: #fed136;
+}
+.btn.orange:hover{
+    background-color: #000000;
+}
+
+
+        /* FORM */
+input, textarea{
+    border: 1px solid #aaaaaa;
+    border-radius: 2px;
+    margin-bottom: 30px;
+    padding: 10px;
+    width: 100%;
+}
+input[type="submit"]{
+    width: auto;
+}
+textarea{
+    height: 170px;
+}
+input:focus, textarea:focus{                 /* QUANDO OBTER O FOCO */
+    outline: 1px solid #777777;            /* Outline quase como uma borda */
+}
+input::placeholder, textarea::placeholder{        /* DICA DE COMO FORMATAR O PLACEHOLDER */
+    color: #ffffff;
+}
+input:focus::placeholder, textarea:focus::placeholder{
+    color: #aaaaaa;
+}
+
+.input-control{
+    position: relative;
+}
+.input-control label{
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    opacity: 0;
+}
+.input-control input:focus ~ label, .input-control textarea:focus ~ label{              /* FAZENDO O EFEITO DO PLACEHOLDER SUBIR AO OBTER O FOCO */
+    top: -25px;                                                                         /* '~' Este seletor css seleciona o proximo elemento 'label', e neste caso aplica o efeito */
+    font-size: 12px;
+    transition: ease .5s all;
+    opacity: 1;
+}
+
+
+        /* ICONS */
+.icon-container{
+    display: inline-block;
+    width: 140px;
+    height: 140px;
+    background: #e1f3e1;
+    border-radius: 30px;
+    position: relative;
+}
+.icon-container .material-icons{
+    display: block;                /* É necessário block para poder definir a posição com 'position' */
+    font-size: 85px;
+    color: rgb(84, 209, 84);
+    position: absolute;    /*  Posição absoluta em relacão ao bloco que está contido */
+    top: 50%;                 
+    left: 50%;
+    transform: translate(-50%, -50%);   /* DICA: centralizamos o ícone */
+    cursor: default;           /* Deve-se colocar como padrão porque os icones são textos, portanto caso fosse passado o mouse em cima ficará como 'modo edição' */
+}
+.img-box-round{
+    display: inline-block;
+    border-radius: 100%;
+    overflow: hidden;          /* CORTA AS SOBRAS */
+}
+.img-box-label:before{
+    content: '';
+    display: block;
+    width: 50%;
+    height: 60%;
+    border-right: 2px solid rgb(32, 123, 32);
+    background: transparent;
+    margin-bottom: 10px;
+}

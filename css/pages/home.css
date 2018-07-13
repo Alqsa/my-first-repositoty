@@ -1,0 +1,183 @@
+@import url('../style.css');
+
+        /* HOME */
+#header.page-home{
+    background-image: url('../../img/background-header.jpg');
+}
+
+#how-it-work{
+    background-color: #ffffff;
+}
+
+#customers{
+    background-color: rgb(242, 242, 242);
+}
+#customers .btn{
+    margin-top: 80px;
+    background-color: rgb(220, 220, 220);
+    color: rgb(130, 130, 130);
+}
+#customers .btn:hover{
+    background-color: rgb(130, 130, 130);
+    color: rgb(220, 220, 220);
+}
+#customers .btn .material-icons{
+    vertical-align: middle;            /* Só funciona com inline e inline-block*/
+    font-size: 18px;
+}
+#customers .container{
+    max-width: 1000px;
+}
+
+#team{
+    background-color: rgb(84, 209, 84);
+    color: #ffffff;
+}
+#team h2:after{
+    background-color: rgb(255, 255, 255);
+}
+#team .img-box-round{
+    width: 120px;
+    height: 120px;
+}
+
+
+        /* QUEM SOMOS */
+#header.page-quem-somos{
+    background-image: url('../../img/background-quem-somos.jpg');
+}
+#intro{
+    background-color: #ffffff;
+}
+#intro h2, #valores h2{
+    font-size: 20px;
+}
+#intro h2{
+    text-align: left;
+}
+#intro h2:after{
+    margin: 5px 0 0 0;
+}
+
+#valores{
+    background-color: #f3f0e7;
+}
+#valores h2{
+    margin-top: 20px;
+}
+#valores h2:after {
+    display: none;
+}
+
+#img-box img{
+    max-width: 100%;           /* A imagem vai ocupar 100% da box que ela está e não vai quebrar */
+    height: auto;
+}
+
+@media (max-width: 991px){
+    #img-box{
+        text-align: center;
+    }
+}
+
+
+        /* CLIENTES */
+#header.page-clientes{
+    background-image: url('../../img/background-clientes.jpg');
+}                        
+
+
+        /* EQUIPE */
+#header.page-equipe{
+    background-image: url("../../img/background-equipe.jpg");
+}
+#team_equipe{
+    background-color: #f3f0e7;
+}
+#team_equipe .img-box-round{
+    width: 120px;
+    height: 120px;
+    border: 2px solid rgb(84, 209, 84);
+}
+#team_equipe .img-box-label:before{
+    display: none;
+}
+#team_equipe .row:first-child{
+    margin-bottom: 40px;
+}
+.team-member .description{
+    background-color: rgba(0, 0, 0, 0.7);            /* rgba = é um rgb mas com trasnparencia de cor */
+    border: 5px solid rgba(0, 0, 0, 0.3);
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+@media(min-width: 992px){
+    .team-member{
+        position: relative;
+    }
+    .team-member:hover .description{
+        display: block;
+    }
+    .team-member .description{     /* Posicionando a caixa preta a direita */
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        z-index: 99;
+        width: 400px;
+    }
+    .team-member:nth-child(4) .description, .team-member:nth-child(5) .description{  /* Capturando as ultimas duas box do lado direito e fazendo a caixa preta ficar a esquerda para não quebrar o layout */
+        left: auto;
+        right: 50%;
+    }
+}
+
+
+        /* CONTATO */
+#header.page-contato{
+    background-image: url('../../img/background-contato.jpg');
+}
+main{
+    background-color: rgb(243, 240, 231);
+}
+.btn_contato{
+    background-color: #e0b816;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: ease .5s all;             /* Deixando a transição mais suave */
+    border: none !important;
+    cursor: pointer;
+
+    border-radius: 0;
+    padding: 20px 60px;
+    font-size: 18px;
+    border: 1px solid #000000;
+}
+
+.btn_contato:hover{
+    background-color: #000000;
+}
+
+
+        /* PRODUTO */
+#header.page-produto{
+    background-image:  url('../../img/background-produto.jpg');
+}
+#download{
+    background-color: #f9f6f1;
+}
+#download .btn{
+    font-size: 18px;
+}
+#funcionalidades .material-icons{
+    float: left;
+    height: 200px;
+    font-size: 60px;
+    margin-right: 20px;
+}
+#funcionalidades h3{
+    margin-top: 0;
+}
