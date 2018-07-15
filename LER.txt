@@ -1,7 +1,7 @@
-ENVIAR EMAIL ATRAVES DO GOOGLE DRIVE
+# ENVIAR EMAIL ATRAVES DO GOOGLE DRIVE
 https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server
 
-MINIFICANDO O CSS
+# MINIFICANDO O CSS
 No terminal do node digite:
 
 	* Instalar:
@@ -11,3 +11,9 @@ No terminal do node digite:
 
 
 https://www.npmjs.com/package/node-minify
+
+
+# HOSPEDANDO NO GITHUB
+	lembrar do comando git status para ver se esta pronto (tudo verde) depois do comando 'git add .'
+
+	
